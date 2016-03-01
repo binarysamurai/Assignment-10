@@ -1,0 +1,20 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+    <script type="text/javascript">
+        var app = angular.module('App', [])
+        app.controller('Ctrl', function ($scope) {
+            $scope.number = 163929.55327873;
+        });
+    </script>
+</head>
+<body ng-app="myApp">
+    <div ng-controller="myCtrl">
+        <span>Number: {{number}}</span><br />
+        <span>Number reduced to two decimal points: {{number | number:2}}</span>
+    </div>
+</body>
+</html>
